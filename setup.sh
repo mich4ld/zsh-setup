@@ -20,11 +20,15 @@ function ask_fonts_install() {
     fi
 }
 
-if [ $1 = '--install-fonts' ]; then
+if [ $1 = '--no-fonts' ]; then
+    echo "===> --no-fonts option detected"
+elif [ $1 = '--install-fonts' ]; then
+    echo "===> --install-fonts option detected"
     install_fonts
-elif [ ! $1 = '--no-fonts' ]; then
+else
     ask_fonts_install
 fi
+
 
 echo "===> Installing oh my zsh..."
 RUNZSH=no sh -c "$(curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
