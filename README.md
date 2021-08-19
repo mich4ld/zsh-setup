@@ -21,3 +21,7 @@ Install fonts without asking:
 ```
 curl https://raw.githubusercontent.com/mich4ld/zsh-setup/main/setup.sh | sh -s -- --install-fonts
 ```
+
+Tested with:
+- Arch
+- Manjaro
