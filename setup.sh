@@ -14,7 +14,7 @@ function install_fonts() {
 
 function ask_fonts_install() {
     echo "===> Install fonts? (Y/n)"
-    read INSTALL_ANSWER
+    read INSTALL_ANSWER < /dev/tty
 
     if [[ $INSTALL_ANSWER = y || $INSTALL_ANSWER = Y ]]; then
         install_fonts
@@ -49,7 +49,7 @@ echo "===> Enabling zsh plugins..."
 sed -i 's/plugins=(git)/plugins=(git history-substring-search colored-man-pages zsh-autosuggestions zsh-syntax-highlighting zsh-z)/g' ~/.zshrc
 
 echo "===> Setting zsh as your default shell..."
-chsh -s $(which zsh)
+chsh -s $(which zsh) < /dev/tty
 
 echo "===> Zsh plugins and theme installed"
 echo "Open new terminal or reboot OS and type zsh to see fonts and icons"
