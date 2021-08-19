@@ -7,7 +7,7 @@ My zsh configuration script
 - git
 - zsh
 
-### Installation (testing in progress)
+### Installation
 ```
 $ curl https://raw.githubusercontent.com/mich4ld/zsh-setup/main/setup.sh | sh
 ```
