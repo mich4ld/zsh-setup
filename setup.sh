@@ -30,7 +30,6 @@ else
     ask_fonts_install
 fi
 
-
 echo "===> Installing oh my zsh..."
 RUNZSH=no sh -c "$(curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
