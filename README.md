@@ -1,10 +1,7 @@
 # Automate zsh setup
 My zsh configuration script
 
-### Installation
+### Installation (testing in progress)
 ```
-$ git clone https://github.com/mich4ld/zsh-setup
-$ cd zsh-setup
-$ chmod +x ./setup.sh
-$ ./setup.sh
+$ curl https://raw.githubusercontent.com/mich4ld/zsh-setup/main/setup.sh | sh
 ```
