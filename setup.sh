@@ -1,5 +1,19 @@
 #!/bin/sh
 
+FONTS_DIR=~/.local/share/fonts/
+
+echo "Install fonts? (Y/n)"
+read INSTALL_ANSWER
+
+if [[ $INSTALL_ANSWER = y || $INSTALL_ANSWER = Y ]]; then
+    echo "===> Installing fonts..."
+    curl -o ~/fonts.zip 'https://raw.githubusercontent.com/mich4ld/zsh-setup/main/fonts.zip'
+    mkdir -p $FONTS_DIR
+    unzip fonts.zip -d $FONTS_DIR
+    echo "===> Clearing archive..."
+    rm ~/fonts.zip
+fi
+
 echo "===> Installing oh my zsh..."
 RUNZSH=no sh -c "$(curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
