@@ -1,5 +1,8 @@
 # Automate zsh setup
 My zsh configuration script
+</br>
+<img height="400" src="https://user-images.githubusercontent.com/43048524/130137400-684a2034-a070-4abc-a0ea-652fa41d3beb.png" />
+
 
 ### Dependencies
 - unzip
