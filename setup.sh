@@ -48,4 +48,7 @@ sed -i 's%ZSH_THEME="robbyrussell"%ZSH_THEME="powerlevel10k/powerlevel10k"%g' ~/
 echo "===> Enabling zsh plugins..."
 sed -i 's/plugins=(git)/plugins=(git history-substring-search colored-man-pages zsh-autosuggestions zsh-syntax-highlighting zsh-z)/g' ~/.zshrc
 
+echo "===> Setting zsh as your default shell..."
+chsh -s $(which zsh)
+
 echo "===> Zsh plugins and theme installed"
