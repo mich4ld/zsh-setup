@@ -12,7 +12,7 @@ function install_fonts() {
 }
 
 function ask_fonts_install() {
-    echo "Install fonts? (Y/n)"
+    echo "===> Install fonts? (Y/n)"
     read INSTALL_ANSWER
 
     if [[ $INSTALL_ANSWER = y || $INSTALL_ANSWER = Y ]]; then
@@ -49,4 +49,4 @@ sed -i 's%ZSH_THEME="robbyrussell"%ZSH_THEME="powerlevel10k/powerlevel10k"%g' ~/
 echo "===> Enabling zsh plugins..."
 sed -i 's/plugins=(git)/plugins=(git history-substring-search colored-man-pages zsh-autosuggestions zsh-syntax-highlighting zsh-z)/g' ~/.zshrc
 
-echo "Zsh plugins and theme installed"
+echo "===> Zsh plugins and theme installed"
