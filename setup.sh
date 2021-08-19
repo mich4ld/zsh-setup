@@ -20,9 +20,7 @@ function ask_fonts_install() {
     fi
 }
 
-if [ -n "$1" ]; then
-    ask_fonts_install
-elif [ "$1" = '--no-fonts' ]; then
+if [ "$1" = '--no-fonts' ]; then
     echo "===> --no-fonts option detected"
 elif [ "$1" = '--install-fonts' ]; then
     echo "===> --install-fonts option detected"
