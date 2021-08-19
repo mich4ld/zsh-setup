@@ -1,5 +1,5 @@
 #!/bin/sh
-
+#
 FONTS_DIR=~/.local/share/fonts/
 FONTS_ZIP=~/fonts.zip
 
