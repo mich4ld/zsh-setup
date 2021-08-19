@@ -1,14 +1,15 @@
 #!/bin/sh
 
 FONTS_DIR=~/.local/share/fonts/
+FONTS_ZIP=~/fonts.zip
 
 function install_fonts() {
     echo "===> Installing fonts..."
-    curl -o ~/fonts.zip 'https://raw.githubusercontent.com/mich4ld/zsh-setup/main/fonts.zip'
+    curl -o $FONTS_ZIP 'https://raw.githubusercontent.com/mich4ld/zsh-setup/main/fonts.zip'
     mkdir -p $FONTS_DIR
-    unzip fonts.zip -d $FONTS_DIR
+    unzip $FONTS_ZIP -d $FONTS_DIR
     echo "===> Clearing archive..."
-    rm ~/fonts.zip
+    rm $FONTS_ZIP
 }
 
 function ask_fonts_install() {
