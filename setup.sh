@@ -52,3 +52,4 @@ echo "===> Setting zsh as your default shell..."
 chsh -s $(which zsh)
 
 echo "===> Zsh plugins and theme installed"
+echo "Open new terminal and type zsh to see fonts and icons"
