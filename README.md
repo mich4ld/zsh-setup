@@ -26,5 +26,6 @@ curl https://raw.githubusercontent.com/mich4ld/zsh-setup/main/setup.sh | bash -s
 ```
 
 Tested with:
+- Android (with `Termux`)
 - Arch
 - Manjaro
